@@ -163,8 +163,8 @@ public class Library {
             }
         }
         public void sortBooksByTitle() {
-        books.sort((a, b) -> a.getTitle().compareToIgnoreCase(b.getTitle()));
-        System.out.println("Books sorted alphabetically by title.");
+            books.sort((a, b) -> a.getTitle().compareToIgnoreCase(b.getTitle()));
+            System.out.println("Books sorted alphabetically by title.");
         }
         // ── Load Books from File ──
         /**
