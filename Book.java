@@ -43,10 +43,11 @@ public class Book {
 
     /** @return true if the book is available, false if checked out */
     public boolean isAvailable() { return isAvailable; }
+    
     /** @return the book's status as a readable string ("Available" or "Checked Out") */
     public String getStatus() {
-        return isAvailable ? "Available" : "Checked Out";
-    }
+        return isAvailable ? "Available" : "Checked Out";}
+    
     // ── Setter ──
     /**
      * Updates the availability status of the book.
