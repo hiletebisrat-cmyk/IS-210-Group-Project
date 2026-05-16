@@ -154,7 +154,6 @@ public class Library {
                 return;
             }
 
-
             if (!book.isAvailable()) {
                 book.setAvailable(true);
                 System.out.println("Book returned: " + book.getTitle());
