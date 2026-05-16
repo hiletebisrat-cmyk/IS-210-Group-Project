@@ -103,7 +103,7 @@ public class Library {
             System.out.println("No books in the library.");
             return;
         }
-        String fmt = "| %-20.20s | %-30.30s | %-13.13s | %-11.11s |%n";
+        String fmt = "| %-30.30s | %-20.20s | %-13.13s | %-11.11s |%n";
         String divider = "───────────────────────────────────────────────────────────────────────────────────────";
 
         System.out.printf("%n───── Library Catalog (%d book%s) ───────────────────────────────────────────────────────%n",
@@ -111,10 +111,10 @@ public class Library {
                 books.size() == 1 ? "" : "s"
         );
         System.out.println(divider);
-        System.out.printf(fmt, "Author", "Title", "ISBN", "Status");
+        System.out.printf(fmt, "Title", "Author", "ISBN", "Status");
         System.out.println(divider);
         for (Book book : books) {
-            System.out.printf(fmt, book.getAuthor(), book.getTitle(), book.getISBN(), book.getStatus());
+            System.out.printf(fmt, book.getTitle(), book.getAuthor(), book.getISBN(), book.getStatus());
         }
         System.out.println(divider);
     }
