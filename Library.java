@@ -124,7 +124,7 @@ public class Library {
          *
          * @param isbn the ISBN of the book to check out
          */
-        public void checkOutBook (String isbn){
+        public void checkOutBook(String isbn) {
             Book book = findByISBN(isbn);
 
             if (book == null) {
@@ -146,7 +146,7 @@ public class Library {
          *
          * @param isbn the ISBN of the book to return
          */
-        public void returnBook (String isbn){
+        public void returnBook(String isbn) {
             Book book = findByISBN(isbn);
 
             if (book == null) {
@@ -174,7 +174,7 @@ public class Library {
          *
          * @param filename path to the text file
          */
-        public void loadBooksFromFile (String filename){
+        public void loadBooksFromFile(String filename) {
             try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
 
                 String line;
